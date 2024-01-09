@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const setCookie = require('../utils/Cookie');
 const { ErrorHandler } = require('../middlewares/ErrorMiddleWare');
+const jobCollection = require('../model/JobModel');
 
 const checkRoute = (req, res) => {
   res.status(200).json({
@@ -59,4 +60,46 @@ const login = async (req, res, next) => {
   }
 };
 
-module.exports = { checkRoute, register, login };
+const addJob = async (req, res) => {
+  try {
+    const {
+      company_name,
+      company_logo,
+      job_position,
+      monthly_salary,
+      job_type,
+      remote_office,
+      location,
+      job_description,
+      about_company,
+      skills,
+      information,
+    } = req.body;
+
+    console.log(req.user._id);
+
+    const job = await jobCollection.create({
+      company_name,
+      company_logo,
+      job_position,
+      monthly_salary,
+      job_type,
+      remote_office,
+      location,
+      job_description,
+      about_company,
+      skills,
+      information,
+      user: req.user._id,
+    });
+
+    res.status(201).json({
+      success: true,
+      message: 'Job added successfully',
+    });
+  } catch (error) {
+    next(new ErrorHandler(error.message, 500));
+  }
+};
+
+module.exports = { checkRoute, register, login, addJob };
