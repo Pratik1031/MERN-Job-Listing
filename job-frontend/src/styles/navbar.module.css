@@ -1,0 +1,93 @@
+.header {
+  height: 6rem;
+  width: 100%;
+  background-color: #ed5353;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'DM Sans', 'sans-serif';
+  margin-left: 4%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4%;
+  align-items: center;
+}
+
+.logoutWidth {
+  width: 18rem;
+}
+
+.btnWidth {
+  width: 11rem;
+}
+
+.buttons > button {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 4px;
+  font-family: 'DM Sans', 'Sans-serif';
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.register {
+  background-color: #fff;
+  border: none;
+  color: #ed5353;
+  font-weight: 600;
+}
+
+.greet,
+.logout {
+  margin-right: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'DM Sans';
+}
+
+.recruiter_img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+}
+
+@media (max-width: 610px) {
+  .header {
+    height: 4rem;
+  }
+  .buttons > button {
+    height: 2rem;
+    width: 4.5rem;
+  }
+  .login {
+    margin-left: 10px;
+  }
+
+  .logoutWidth {
+    width: 9rem;
+  }
+  .logout {
+    margin-left: 8px;
+  }
+  .greet {
+    display: none;
+  }
+}

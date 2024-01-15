@@ -1,0 +1,164 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchArea {
+  margin-top: 3%;
+  height: 15rem;
+  width: 75%;
+  box-shadow: 0 0 15px 0 #f0a6a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.search {
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  width: 80%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.search > img {
+  height: 1.4rem;
+  cursor: pointer;
+}
+
+.search > input {
+  height: 2rem;
+  width: 90%;
+  padding-left: 2%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  color: #9c9c9c;
+}
+
+.select {
+  height: 2rem;
+  width: 8rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9c9c9c;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 80%;
+  height: 50%;
+  margin-left: 10%;
+  display: flex;
+  position: relative;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.addjob {
+  height: 2.3rem;
+  width: 7rem;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #ed5353;
+  color: #fff;
+  position: absolute;
+  right: 0%;
+  cursor: pointer;
+}
+
+.clear {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  color: #ed5353;
+  font-family: 'DM Sans';
+  cursor: pointer;
+}
+
+@media (max-width: 1111px) {
+  .keywords {
+    width: 100%;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    margin-left: 10%;
+  }
+  .clear {
+    margin-left: 3rem;
+  }
+  .keywords {
+    height: 70%;
+  }
+  .searchArea {
+    height: 15rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .addjob,
+  .select {
+    height: 1.8rem;
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+  .addjob {
+    margin-right: 25%;
+  }
+  .clear {
+    bottom: 82%;
+  }
+  .skill_and_cut > div {
+    font-size: 0.5rem;
+  }
+  .skill_and_cut > span {
+    font-size: 0.8rem;
+  }
+  .skill_and_cut {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .keywords {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 610px) {
+  .clear {
+    bottom: 85%;
+  }
+  .search,
+  .wrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .wrapper {
+    height: 10rem;
+  }
+  .searchArea {
+    width: 95%;
+  }
+}

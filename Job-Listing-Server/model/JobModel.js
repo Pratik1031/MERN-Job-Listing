@@ -22,6 +22,10 @@ const jobSchema = new mongoose.Schema({
     enum: ['full-time', 'part-time'],
     required: true,
   },
+  job_duration: {
+    type: String,
+    required: true,
+  },
   remote_office: {
     type: String,
     enum: ['remote', 'office'],

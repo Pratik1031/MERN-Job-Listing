@@ -1,0 +1,172 @@
+.container {
+  min-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffefef;
+  font-family: 'DM Sans';
+}
+
+.company_short_info {
+  height: 7rem;
+  width: 75%;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: #fff;
+  position: absolute;
+  top: 4.8rem;
+  box-shadow: 0px 0px 10px #aaa6a6;
+}
+
+.jobDetails {
+  height: auto;
+  width: 75%;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #aaa6a6;
+  padding: 2% 2.5%;
+  position: absolute;
+  top: 14rem;
+}
+
+.section_1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #999999;
+}
+
+.old,
+.dot,
+.job_type,
+.logo {
+  margin-right: 15px;
+}
+
+.section_1 > img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.section_2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_2 > button {
+  background-color: #ed5353;
+  border: none;
+  color: #fff;
+  height: 2rem;
+  width: 6rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section_2 span {
+  color: #ed5353;
+  font-weight: 600;
+}
+
+.section_3 {
+  display: flex;
+  height: 3.5rem;
+  color: #999999;
+}
+
+.salary,
+.duration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.salary > span,
+.duration > span {
+  font-weight: 600;
+  color: #595959;
+}
+
+.img_text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.img_text span {
+  margin-left: 10%;
+}
+
+.skills_div {
+  height: 2rem;
+  width: auto;
+  padding: 10px;
+  background-color: #ffeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-right: 30px;
+}
+
+.allSkills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section_4 span,
+.section_5 span,
+.section_6 span {
+  color: #595959;
+  line-height: 1.7rem;
+}
+
+@media (max-width: 800px) {
+  .company_short_info {
+    font-size: 1.2rem;
+  }
+  .section_1 {
+    flex-wrap: wrap;
+  }
+  .skills_div {
+    margin-bottom: 10px;
+  }
+
+  .section_3 {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7rem;
+  }
+  .img_text span {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 500px) {
+  .section_2 {
+    flex-direction: column;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .company_short_info {
+    top: 3.5rem;
+  }
+  .jobDetails {
+    top: 12rem;
+  }
+}

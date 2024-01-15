@@ -1,0 +1,156 @@
+.jobcards {
+  margin-top: 2%;
+  height: 8.5rem;
+  width: 75%;
+  box-shadow: 0 0 15px 0 #f0a6a6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobcard_left_part {
+  height: 5.5rem;
+  display: flex;
+  margin-left: 3%;
+}
+
+.info {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info > .jobtype > span {
+  margin-left: 3%;
+  margin-right: 4%;
+  color: #ed5353;
+}
+
+.job {
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65%;
+}
+
+.job_title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'DM Sans';
+}
+
+.person_logo,
+.ruppee_logo {
+  height: 0.9rem;
+}
+
+.flag {
+  height: 1.7rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee,
+.salary,
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee > span,
+.salary > span,
+.location > span {
+  margin-left: 0.5rem;
+  font-family: 'DM Sans';
+  font-size: 0.9rem;
+  color: #9c9c9c;
+}
+
+.companyLogo {
+  height: 3rem;
+}
+
+.jobcard_right_part {
+  height: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+
+.skillboxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons > button {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 4px;
+  font-family: 'DM Sans', 'Sans-serif';
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.editjob {
+  background-color: transparent;
+  border: 2px solid #ed5353;
+  color: #ed5353;
+}
+
+.viewdetails {
+  background-color: #ed5353;
+  border: none;
+  color: #fff;
+}
+
+@media (max-width: 1330px) {
+  .jobcards {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .jobcards {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20rem;
+  }
+
+  .jobcard_right_part {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .jobcards {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20rem;
+    width: 95%;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .jobcard_left_part {
+    height: 7rem;
+    width: 95%;
+    font-size: 0.9rem;
+  }
+}
